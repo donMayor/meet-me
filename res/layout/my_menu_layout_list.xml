@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#44b2eb"
+    android:layout_marginTop="2dp">
+    <!-- Subject Label -->
+   
+    <TextView
+        android:id="@+id/hist_search_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:paddingLeft="5dip"
+        android:textSize="18dip"
+        android:textStyle="bold" />
+    <!-- To email -->
+    <TextView android:id="@+id/hist_search_email"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dip"
+        android:paddingTop="4dp"
+        android:textColor="#ffffff"
+        android:paddingBottom="4dp"
+        android:textSize="12dip"
+        android:layout_below="@id/hist_search_name"/>
+     
+    <!-- Mail date -->
+    <TextView android:id="@+id/hist_search_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"/>
+
+   
+</RelativeLayout>
+

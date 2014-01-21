@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Event_adding" >
+
+
+<ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFFFFF"
+  >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+   
+<EditText 
+    android:id="@+id/event_name"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:hint="Event Name"
+    android:textColor="#44b2eb"
+    android:textStyle="bold"
+    android:gravity="center"   
+    />
+<EditText 
+    android:id="@+id/event_hash"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:hint="Event Hashtag"
+    android:textColor="#44b2eb"
+    android:textStyle="bold"
+    android:gravity="center"   
+    />
+<TextView
+		android:id="@+id/lblDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		android:background="#fff1f6"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:textColor="#44b2eb"
+		android:textStyle="bold">
+	</TextView>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+	<Button 
+          android:id="@+id/startdate"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:background="#44b2eb"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+          android:text="Start Date"
+          android:textSize="15sp"/>
+	   	<Button 
+          android:id="@+id/starttime"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:background="#44b2eb"
+          android:layout_marginTop="10dp"
+          android:padding="5dp"
+          android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+          android:text="Start Time"
+          android:textSize="15sp"/>
+</LinearLayout>
+<TextView
+		android:id="@+id/lblDateAndTime1"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:textColor="#44b2eb"
+		android:background="#fff1f6"
+		android:textStyle="bold">
+	</TextView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+    	<Button 
+          android:id="@+id/enddate"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:background="#44b2eb"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+          android:text="End Date"
+          android:textSize="15sp"/>
+	   	<Button 
+          android:id="@+id/endtime"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:background="#44b2eb"
+          android:layout_marginTop="10dp"
+          android:padding="5dp"
+          android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+          android:text="End Time"
+          android:textSize="15sp"/>
+</LinearLayout>
+	   	<Button 
+          android:id="@+id/bradcast"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="#44b2eb"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="30dp"
+          android:padding="5dp"
+          android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+          android:text="Broadcast Event"
+          android:textSize="15sp"/>
+</LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

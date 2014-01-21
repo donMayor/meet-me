@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meet_me"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <permission
+        android:name="your.package.name.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.meet_me.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/meet_logo"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" >
+        </meta-data>
+
+        <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Sharing_tab"
+            android:label="@string/title_activity_login_fragament"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.My_menu_tab"
+            android:label="@string/title_activity_register_fragment"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.ListMenu"
+            android:label="@string/title_activity_list_menu"
+            android:parentActivityName="android.app.ListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.meet_me.LocationActivity"
+            android:label="@string/title_activity_location"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meet_me.Register_login"
+            android:icon="@drawable/meet_logo"
+            android:label="@string/title_activity_register_login"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Facebook_twitter_signup"
+            android:label="@string/title_activity_facebook_twitter_signup"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Sing_in"
+            android:label="@string/title_activity_sing_in"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Add_Service"
+            android:label="@string/title_activity_add__service"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Phone_Number"
+            android:label="@string/title_activity_phone__number"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Personnal_profile"
+            android:label="@string/title_activity_personnal_profile"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Organisation_profile"
+            android:label="@string/title_activity_organisation_profile"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Business_card"
+            android:label="@string/title_activity_business_card"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.TabHolder"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_tab_holder"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Event_search"
+            android:label="@string/title_activity_event_search"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Event_adding"
+            android:icon="@drawable/meet_logo"
+            android:label="@string/title_activity_event_adding"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.meet_me.View_Business_card"
+            android:label="@string/title_activity_view__business_card"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Update_location"
+            android:label="@string/title_activity_update_location"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.AndroidGPSTrackingActivity"
+            android:label="@string/title_activity_android_gpstracking"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Request"
+            android:label="@string/title_activity_request"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Recent_Actvity"
+            android:label="@string/title_activity_recent__actvity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Recent_Activity_recieved"
+            android:label="@string/title_activity_recent__activity_recieved"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Recent_Activity_sent"
+            android:label="@string/title_activity_recent__activity_sent"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.AndroidGoogleMapsActivity"
+            android:label="@string/title_activity_android_google_maps"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Card"
+            android:label="@string/title_activity_card"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Edit"
+            android:label="@string/title_activity_edit"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.LoadImage"
+            android:label="@string/title_activity_load_image"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Contact_log"
+            android:label="@string/title_activity_contact_log" >
+        </activity>
+       
+        <activity
+            android:name="com.meet_me.User_name"
+            android:label="@string/title_activity_user_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.meet_me.Name"
+            android:label="@string/title_activity_name"
+            android:parentActivityName="android.app.AliasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.AliasActivity" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Add_Service_facebook"
+            android:label="@string/title_activity_add__service_facebook"
+            android:parentActivityName="android.app.AliasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.AliasActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meet_me.ActionBar"
+            android:label="@string/title_activity_action_bar"
+            android:parentActivityName="android.support.v7.app.ActionBarActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v7.app.ActionBarActivity" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Meet_me"
+            android:label="@string/title_activity_meet_me"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.meet_me.Event_search_fragement"
+            android:label="@string/title_activity_event_search_fragement"
+            android:parentActivityName="android.support.v4.app.Fragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.Fragment" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Profile_fragment"
+            android:label="@string/title_activity_profile_fragment"
+            android:parentActivityName="android.support.v4.app.Fragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.Fragment" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Recent_fragment"
+            android:label="@string/title_activity_recent_fragment"
+            android:parentActivityName="android.support.v4.app.Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.Fragment" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Contact_fragment"
+            android:label="@string/title_activity_contact_fragment"
+            android:parentActivityName="android.support.v4.app.Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.Fragment" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Test"
+            android:label="@string/title_activity_test"
+            android:parentActivityName="android.support.v4.app.Fragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.Fragment" />
+        </activity>
+        -->
+        <activity
+            android:name="com.meet_me.Contact_list_Frageent"
+            android:label="@string/title_activity_contact_list__frageent"
+            android:parentActivityName="android.support.v7.app.ActionBarActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v7.app.ActionBarActivity" />
+        </activity>
+        <activity
+            android:name="com.meet_me.Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="android.support.v7.app.ActionBarActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v7.app.ActionBarActivity" />
+        </activity>
+    </application>
+
+</manifest>

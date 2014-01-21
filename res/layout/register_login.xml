@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/new_background"
+    tools:context=".Facebook_login"> 
+<!-- <ImageView
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="40dp"
+	android:layout_centerHorizontal="true"
+	android:layout_marginBottom="10dp"
+    android:src="@drawable/new_meetme" >
+</ImageView>  
+
+ <TextView
+     	android:id="@+id/tag"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textStyle="bold|italic"
+           android:layout_margin="20dp"
+           android:layout_below="@+id/logo"
+           android:layout_centerHorizontal="true"
+           android:text="Get to know Events around you and SOCIALIZE!!!"
+           android:textColor="#ffffff"
+           android:textSize="20sp"/> -->
+
+<ImageView
+    android:id="@+id/facebookBuuton"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_height="50dp"
+	android:layout_marginBottom="30dp"
+    android:layout_alignParentBottom="true"
+    android:alpha="0.5"
+    android:src="@drawable/new_facebook" >
+</ImageView>  
+
+</RelativeLayout>

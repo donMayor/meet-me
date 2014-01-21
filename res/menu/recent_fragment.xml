@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:hmkcode="http://schemas.android.com/apk/res-auto">
+      <item
+        android:id="@+id/action_in"
+        android:orderInCategory="100"
+        hmkcode:showAsAction="always"
+        android:icon="@drawable/new_in"
+        android:title="Recieved"/>
+      <item
+        android:id="@+id/action_out"
+        android:orderInCategory="100"
+        hmkcode:showAsAction="always"
+        android:icon="@drawable/new_out"
+        android:title="Sent"/>  
+</menu>

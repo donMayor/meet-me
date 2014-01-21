@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginTop="10dp"
+    android:background="#44b2eb">
+ 
+    <!-- Subject Label -->
+    <TextView
+        android:id="@+id/recieved_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="4dip"
+        android:textSize="18dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+     
+    <!-- To email -->
+    <TextView android:id="@+id/recieved_event"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dip"
+        android:paddingBottom="6dip"
+        android:textSize="15dip"
+        android:textColor="#ffffff"
+        android:layout_below="@id/recieved_username"/>
+     
+    <!-- Mail date -->
+    <TextView android:id="@+id/recieved_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:padding="8dip"/>
+  
+</RelativeLayout>

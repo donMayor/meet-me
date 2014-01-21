@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:hmkcode="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        hmkcode:showAsAction="always"
+        android:icon="@drawable/new_about"
+        android:title="About"/>
+<item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        hmkcode:showAsAction="always"
+        android:icon="@drawable/new_help"
+        android:title="Help"/>
+        <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+</menu>

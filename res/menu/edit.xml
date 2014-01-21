@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:hmkcode="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_pic"
+        android:orderInCategory="100"
+        hmkcode:showAsAction="always"
+        android:icon="@drawable/new_pic"
+        android:title="Change Pic"/>
+     <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        hmkcode:showAsAction="always"
+        android:icon="@drawable/new_home"
+        android:title="Home"/>
+ </menu>
